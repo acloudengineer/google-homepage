@@ -1,7 +1,3 @@
-* {
-  margin: 0px;
-}
-
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -65,19 +61,28 @@ main {
   display: flex;
   align-items: center;
   width: 50%;
-  border: 1px solid #a2a2a2;
+  border: 1px solid #e2e2e2;
   border-radius: 40px;
   margin: 10px auto;
-  height: 40px;
+  height: 25px;
   padding: 10px;
 }
 
 #search:hover {
+  box-shadow: 0 0 5px 5px #e2e2e2;
+}
+
+#search:focus {
   box-shadow: 0 0 10px 10px #d2d2d2;
 }
 
 .icons {
   color: #a2a2a2;
+}
+
+.mic {
+  width: 44px;
+  height: 40px;
 }
 
 .search-bar {
@@ -117,26 +122,27 @@ button {
   margin: 10px;
 }
 
-footer {
+#footer {
   width: 100%;
   height: 50px;
-  padding: 10px;
+  padding: 10px 30px;
   background-color: #f2f2f2;
   position: fixed;
   bottom:0px;
-  display: grid;
+  display: flex;
+  color: rgba(0,0,0,.6);
+}
+
+#footer ul {
+  list-style-type: none;
+  display: flex;
   align-items: center;
+  margin-right: 40px;
 }
 
-footer ul li {
+#footer ul li {
   display: inline;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.box{ 
-  grid-row: 1;
-}
-
-.box.a { width: 1fr;}
-.box.b { width: 1fr;}
-.box.c { width: 1fr;}
